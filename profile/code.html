@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a comprehensive example of the application of html elements and javescript reactivity">
+    <meta name="heywords" content="HTML, Web Development, elements, CSS and Javascript">
+    <title>LEARN CODE!</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <header>
+        <h1>LEARN CODE!</h1>
+        <nav>
+            <ul>
+                 <li><a href="#about">about</a></li>
+                 <li><a href="#services">services</a></li>
+                 <li><a href="#contact">contacts</a></li>
+                 <li><a href="https://www.geeksforgeeks.org" target="_Web Development">geeksforgeeks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="about">
+            <h2>About this page</h2>
+            <p>
+               LEARN CODE! is a simple web page designed to help users understand the concepts of programming. our platform provides a step-by-step guide to learn basic programming languages.
+               we also provide a range of resources, including tutorials, articles, websites, and online courses, to help users learn programming languages.
+            </p>
+            
+
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p> we offer a range of services, including:</p>
+            
+                </li>Web Design & Development</li>
+                <li>python programming</li>
+                <li>Database Management</li>
+                </li>Deployment & DevOps Consultation</li>
+            <p>we are committed to providing high-quality services to our clients. our team of experts is dedicated to helping you achieve your goals.</p>
+            <p>we are always looking for ways to improve our services and provide the best possible
+            <h3>Interest</h3>
+            <select id="serviceList">
+                <option value="Web Design & Development">Web Design & Development</option>
+                <option value="python programming">python programming</option>
+                <option value="Database Management">Database Management</option>
+                <option value="Deployment & DevOps Consultation">Deployment & DevOps Consultation</option>
+            </select>
+      
+            <button id="selectbutton">select</button>
+          
+        </section>
+
+        <section>
+            
+            <h2>Data Representation (table)</h2>
+            <table>
+                <h3>courses and their time duration</h3>
+                <thead>
+                    <tr>
+                    <th>course</th>
+                    <th>Time duration</th>
+                    <th>code websites </th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>web Development</td>
+                        <td>9 months</td>
+                        <td><a href="https://www.geeksforgeeks.org" target="geeksforgeeks">geeksforgeeks</a></td>
+                    </tr>
+                    <tr>
+                        <td>python programming</td>
+                        <td>6 months</td>
+                        <td><a href="https://www.geeksforgeeks.org" target="geeksforgeeks">geeksforgeeks</a></td>
+                            
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td>4 months</td>
+                        <td><a href="https://www.geeksforgeeks.org" target="geeksforgeeks">geeksforgeeks</a></td>
+                    </tr>
+                    <tr>
+                        <td>Deployment & DevOps Consultation</td>
+                        <td>3 months</td>
+                        <td><a href="https://www.geeksforgeeks.org" target="geeksforgeeks">geeksforgeeks</a></td>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>contact us</h2>
+            <fieldset>
+            <form id="contactForm" action="/submit-contact-form" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="User_full_Name" placeholder="" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="User_email" placeholder="" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="User_message" rows="5" cols="40" placeholder="" required></textarea> 
+                <br> 
+                <button class="submit">Submit</button>          
+            </fieldset>
+            <h1>Feedback</h1>
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                <input type="radio" id="socialMedia" name="source" value="socialMedia">
+                <label for="socialMedia">Social Media</label>
+                <br>
+                <input type="radio" id="searchEngine" name="source" value="searchEngine">
+                <label for="searchEngine">Search Engine</label>
+                <br>
+                <input type="radio" id="wordOfMouth" name="source" value="wordOfMouth">
+                <label for="wordOfMouth">Word of Mouth</label>
+                <br>
+                
+
+                <br>
+                <label for="country">country:</label>
+                <select id="country" name="User_country">
+                    <option value="Usa">United States</option>
+                   <option value="Canada">Canada</option>
+                   <option value="Australia">Australia</option>
+                   <option value="Other">Other</option>
+                </select>
+                   <br>
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" id="dob" name="user_dob" placeholder="yy/mm/dd" required>
+
+                    <button class="submit">submit form</button>
+                    <button class="reset">reset form</button>
+            </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 LEARN CODE! All rights reserved.</p>
+        <p>Follow us on:
+            <a href="https://www.facebook.com" target="learn code">Facebook</a>,
+            <a href="https://www.twitter.com" target="learn code">Twitter</a>,
+            <a href="https://www.instagram.com" target="learn code">Instagram</a>
+        </p>
+</body>
+</html>
