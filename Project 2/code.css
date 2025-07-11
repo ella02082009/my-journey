@@ -1,0 +1,422 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+body {
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    font-size: 0.9em;
+    text-align: center;
+    display: flex;
+    border: rgb(185, 104, 231) 1px solid;
+    justify-content: space-between;
+    position: fixed;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60px;
+    opacity: 1;
+    flex-wrap: wrap;
+    z-index: 1000;
+    flex-direction: row;
+}
+.main-nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main-nav ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+.main-nav ul li{
+    margin-left:30px;
+    gap: 20px;
+    position: relative;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+.main-nav ul li a:hover{
+    color: #960ee6;
+}
+.main-nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #960ee6;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.login-btn{
+    border: #960ee6 1px solid;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: white;
+}
+.login-btn:hover{
+    background-color: #960ee6;
+    color: white;
+}
+.signup-btn{
+    border:#960ee6 1px solid;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: #960ee6;
+    color: white;
+}
+.signup-btn:hover{
+    background-color: white;
+    color: #960ee6;
+}
+.header-content{
+    background-color: #bd5ef5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    gap: 40px;
+}
+.auth-buttons{
+    display: flex;
+    margin-left: 200px;
+    gap: 20px;
+}
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #960ee6;
+    text-decoration: none;
+    margin:auto;
+    display: flex;
+    margin-right: 420px;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin: auto;
+    top: 30px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 60px 9% 0;
+    margin-bottom: 40px;
+    line-height: 1;
+    position: relative;
+    background-color: #ffffff;
+}
+.hero-content h1{
+    position: relative;
+    font-size: 25px;
+    color: #bd5ef5;
+    margin-bottom: 20px;
+    background-color: #fcfcfc;
+}
+.hero-content p{
+    position: relative;
+    font-size: 0.9em;
+    color: #666;
+    margin: auto;
+    background-color: #ffffff;
+}
+#hero-iframe{
+    background-color: #ffffff;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;top:20px;left:750px;;
+}
+.courses-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin: auto;
+    top: 30px;
+}
+.courses-section h2{
+    font-size: 1.5em;
+    color: #960ee6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.courses-section input[type="text"]#search-input{
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
+.courses-section input[type="text"]#search-input:focus{
+    border-color: #960ee6;
+    outline: none;
+}
+#search-button{
+    padding: 10px 15px;
+    background-color: #960ee6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.benefits ul li{
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px;
+    flex-wrap: wrap;
+    line-height: 15px;
+}
+.benefits span{
+    font-weight: bold;
+    color: #960ee6;
+}
+#benefits-iframes{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;top:470px;left:750px;
+}
+.popular-courses{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    color: #960ee6;
+}
+.course-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #ffffff;
+}
+#course-card1, #course-card2, #course-card3 {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.course-details{
+    margin-top: 10px;
+}
+.enroll-btn{
+    background-color: #960ee6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.enroll-btn:hover{
+    background-color: #7a00b3;
+}
+#offers{
+    background-color: #ffffff;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin: auto;
+    top: 30px;
+}
+#offers h2{
+    font-size: 1.5em;
+    color: #080808;
+    margin-bottom:10px;
+}
+#offers h2 span{
+    color: #960ee6;
+}
+#offers p{
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+.become-instructor-btn{
+    background-color: #960ee6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.become-instructor-btn:hover{
+    background-color: #7a00b3;
+}
+.offer-card{
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+.offer-card h3{
+    font-size: 1.2em;
+    color: #960ee6;
+    margin-bottom: 10px;
+}
+.offer-card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#offers-iframes{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;top:1650px;left:650px;
+    border-radius: 45px;
+    border: 1px solid #960ee6;
+}
+.offer-btn{
+    background-color: #960ee6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.offer-btn:hover{
+    background-color: #7a00b3;
+}
+.contact-section{
+    background-color: #ffffff;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin: 20px;
+    top: 30px;
+}
+.contact-section h2{
+    font-size: 1.5em;
+    color: #960ee6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    justify-content: center;
+    margin: auto;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    padding: 10px;
+    border: 1px solid #535353;
+    border-radius: 4px;
+    justify-content: center;
+}
+.contact-section button[type="submit"]{
+    background-color: #960ee6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact-section button[type="submit"]:hover{
+    background-color: #7a00b3;
+}
+footer{
+    background-color: #b48bcc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #b48bcc;
+}
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    background-color: #b48bcc;
+}
+.footer-links h3{
+    color: black;
+    background-color: #b48bcc;
+}
+.footer-links ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #b48bcc;
+}
+.footer-links ul li a:hover{
+    color: #960ee6;
+}.footer-links ul li a:active{
+    color: #7a00b3;
+}
+.footer-info{
+    font-size: 0.9em;
+    color: #333;
+    background-color: #b48bcc;
+}
+.footer-info p{
+    margin: 0;
+    background-color: #b48bcc;
+}
+.footer-info h3{
+    color: black;
+    background-color: #b48bcc;
+}
