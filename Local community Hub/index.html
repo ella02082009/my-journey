@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Hub</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <video autoplay muted loop id="background-video">
+                <source src="Download.mp4" type="video/mp4">
+            </video>
+                
+            <div class="container">
+                <h1>Local Community Hub</h1>
+                <p>Find and join community events and study groups near you</p>
+            </div>
+        </header>
+        <main>
+        <section class="controls">
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search for events or groups...">
+                <button id="search-button">Search</button>
+            </div>
+            <label for="event-type-filter">Filter by:</label>
+            <select id="event-type-filter">
+                <option value="all">All</option>
+                <option value="study-group">Study Group</option>
+                <option value="Tech">Tech</option>
+                <option value="Sports">Sports</option>
+                <option value="Arts">Arts</option>
+                <option value="Community">Community</option>
+                <option value="Health">Health</option>
+                <option value="Education">Education</option>
+                <option value="Social">Social</option>
+                <option value="Other">Other</option>
+            </select>
+        </section>
+        <section class="event-list" id="event-list">
+            <div class="box-grid">
+            <div class="event-item 1" data-type="study-group">
+                <h2>Math Study Group</h2>
+                <p>Join us for a weekly math study session.</p>
+                <p><strong>Date:</strong> Every Saturday</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <button class="join-button">Join</button>
+            </div>
+            <div class="event-item 2" data-type="Tech">
+                <h2>Tech Meetup</h2>
+                <p>Discuss the latest in technology and innovation.</p>
+                <p><strong>Date:</strong> Every Wednesday</p>
+                <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                <button class="join-button">Join</button>
+            </div>
+            <div class="event-item 3" data-type="Sports">
+                <h2>Community Soccer Match</h2>
+                <p>Join us for a friendly soccer match.</p>
+                <p><strong>Date:</strong> Every Sunday</p>
+                <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+                <button class="join-button">Join</button>
+            </div>
+            <div class="event-item 4" data-type="Arts">
+                <h2>Art Workshop</h2>
+                <p>Learn new art techniques and create your own masterpiece.</p>
+                <p><strong>Date:</strong> Every Thursday</p>
+                <p><strong>Time:</strong> 4:00 PM - 6:00 PM</p>
+                <button class="join-button">Join</button>
+            <!-- More events can be added here -->
+        </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2023 Local Community Hub. All rights reserved.</p>
+                <p>Follow us on:</p>
+                    <a href="https://www.facebook.com" target="facebook.com">Facebook</a>
+                    <a href="https://www.twitter.com" target="twitter.com">Twitter</a>
+                    <a href="https://www.instagram.com" target="instagram.com">Instagram</a>
+            </div>
+        </footer>
+   <script src="index.js"></script>
+</body>
+</html>
