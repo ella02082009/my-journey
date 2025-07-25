@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code Generator</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <div class="container">
+        <p>enter your text or url</p>
+        <input type="text" placeholder="input your text or url" id="qrText">
+        <div class="img-box" id="imageBox">
+            <img src="" alt="qr-image" id="qrImage">
+        </div>
+        <button onclick="generateQRCode()">Generate QRCode</button>
+    </div>
+  <script src="code.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js" integrity="sha512-pUhApVQtLbnpLtJn6DuzDD5o2xtmLJnJ7oBoMsBnzOkVkpqofGLGPaBJ6ayD2zQe3lCgCibhJBi4cj5wAxwVKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+</body>
+</html>
