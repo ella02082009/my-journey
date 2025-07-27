@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Gothic+Expanded+One&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Baskerville', serif;;
+    color: #ffffff;
+     background-image: url('12e38c6b-f36c-4361-9294-540f1187bd6f.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.pomodoro-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: #6d6b6b 0px 0px 20px 0px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+     align-items: center;
+    justify-content: center;
+    margin: 200px auto;
+}
+.controls{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+   align-items: center;
+    justify-content: center;
+}
+.controls button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6d6b6b;
+    color: white;
+}
+.controls button:hover{
+    background-color: #cdc8c8;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+    color: #000000;
+}
+.mode-selector{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.mode-selector button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6d6b6b;
+    color: white;
+}
+.mode-selector button:hover{
+    background-color: #cdc8c8;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+    color: #000000;
+}
