@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <img src="Sun and cloud with rain drops weather concept 3d vector icon cartoon minimal style _ Premium Vector 1.png" alt="Weather Icon" id="weatherIcon">
+        <form id="form">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit" id="getWeatherBtn">Get Weather</button>
+        </form>
+        <div id="weatherResult" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+        </div>
+        <p id="errorMessage" class="hidden"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
