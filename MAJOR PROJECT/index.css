@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bungee&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Gothic+Expanded+One&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Antonio', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    row-gap: 1px;
+    align-items: center;
+    margin-right: 300px;
+}
+.logo img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-left: 0px auto;
+}
+.logo a{
+    font-family: 'Bungee', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 0px auto;
+}
+.main-nav{
+    background-color: #b00a0a;
+    width: 100%;
+}
+.main-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    margin-right: 85px;
+}
+.main-nav ul li a:hover{
+    text-decoration: underline;
+    color: #e30d0d;
+}
+ .button{
+    display: flex;
+    gap: 20px;
+}
+#login-btn{
+    background-color: #e30d0d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'TikTok Sans', sans-serif;
+}
+#signup-btn{
+    background-color: #e30d0d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'TikTok Sans', sans-serif;
+    width: 90px;
+    margin-right: 80px;
+}
+#login-btn:hover, #signup-btn:hover{
+    background-color: #ffffff;
+    color:#b00a0a ;
+    border: 1px solid #e30d0d;
+    transition: background-color 0.3s ease;
+}
+.hero-section {
+  padding: 100px 0;
+  text-align: left;
+  background-image: url('66.jpeg');
+  background-size: cover;
+  background-position: left;
+
+}
+.hero-section h1 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.hero-section a {
+  margin-top: 20px;
+  margin-left: 50px;                                        
+  padding: 10px 20px;
+  background-color: #b00a0a;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'TikTok Sans', sans-serif;
+}
+.hero-section a:hover {
+  background-color: #e30d0d;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+#services h4 {
+  font-size: 1.0rem;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  text-align: center;
+  color: #e30d0d;
+  padding-top: 20px;
+}
+#services h2 {
+  font-size: 2.0rem;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  text-align: center;
+  color: #202020;
+}
+#services{
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 57px;
+  margin-right: 57px;
+}
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 35px;
+}
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+#tracking{
+    background-image: url('Global\ network\ connection_\ \ _\ Premium\ Vector\ \(2\).jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    text-align: center;
+}
+#tracking h2 {
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+#tracking p {
+  color: #ffffff;
+}
+#tracking input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#tracking button {
+  background-color: #e30d0d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'TikTok Sans', sans-serif;
+}
+#tracking button:hover {
+  background-color: #ffffff;
+  color: #b00a0a;
+  transition: background-color 0.3s ease;
+}
+.tracker{
+    background-image: url('Top 20 Google Maps hacks, tips, and tricks.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: auto;
+}
+#work-process{
+    padding: 10px;
+    margin: auto;
+    background-color: #f0f0f0;
+}
+
+#work-process h2 {
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #b00a0a;
+  margin: 50px;
+}
+#work-process .grid-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+#work-process .process-steps {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 35px;
+}
+#work-process .process-steps img {
+  max-width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+#work-process .process-steps h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #b00a0a;
+}
+#contacts{
+    padding: 50px 0;
+    background-color: #192338;
+}
+#contacts{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+#contacts h2 {
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+#contacts p {
+  color: #ffffff;
+}
+#contacts ul {
+  list-style: none;
+  padding: 0;
+}
+#contacts ul li {
+  margin-bottom: 10px;
+}
+#contacts ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+#contacts ul li a:hover{
+  color: #b00a0a;
+  transition: color 0.3s ease-in;
+
+}
